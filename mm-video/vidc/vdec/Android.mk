@@ -42,9 +42,16 @@ endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm7627a)
 libOmxVdec-def += -DMAX_RES_720P
 endif
+ifeq ($(TARGET_BOARD_PLATFORM),msm7x27a)
+libOmxVdec-def += -DMAX_RES_720P
+endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm7x30)
 libOmxVdec-def += -DMAX_RES_720P
 endif
+ifeq ($(TARGET_BOARD_PLATFORM),msm7630_surf)
+	libOmxVdec-def += -DMAX_RES_720P
+endif
+
 
 libOmxVdec-def += -D_ANDROID_ICS_
 
