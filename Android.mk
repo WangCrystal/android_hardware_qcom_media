@@ -8,7 +8,3 @@ ifneq ($(filter msm8974 msm8960 msm8660 msm7x30 msm7630_surf,$(TARGET_BOARD_PLAT
 include $(QCOM_MEDIA_ROOT)/mm-video/Android.mk
 include $(QCOM_MEDIA_ROOT)/libI420colorconvert/Android.mk
 endif
-
-ifneq ($(filter msm7627a,$(TARGET_BOARD_PLATFORM)),)
-include $(QCOM_MEDIA_ROOT)/libI420colorconvert/Android.mk
-endif
