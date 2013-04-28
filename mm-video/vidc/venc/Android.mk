@@ -36,19 +36,12 @@ libmm-venc-def += -DMAX_RES_1080P_EBI
 libOmxVdec-def += -DPROCESS_EXTRADATA_IN_OUTPUT_PORT
 libmm-venc-def += -D_MSM8974_
 endif
-ifeq ($(TARGET_BOARD_PLATFORM),msm7627a)
-libmm-venc-def += -DMAX_RES_720P
-endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm7x27a)
 libmm-venc-def += -DMAX_RES_720P
 endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm7x30)
 libmm-venc-def += -DMAX_RES_720P
 endif
-ifeq ($(TARGET_BOARD_PLATFORM),msm7630_surf)
-	libmm-venc-def += -DMAX_RES_720P
-endif
-
 ifeq ($(TARGET_USES_ION),true)
 libmm-venc-def += -DUSE_ION
 endif
